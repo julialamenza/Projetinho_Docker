@@ -31,7 +31,8 @@ Depois da imagem criada você vai subir o container:
  
  depois você vai subir o ocntainer lembrando que colocamos uma apste chamada datadir na pasta do mysql e queremos que seus dados do banco fiquem nela
  
-  docker run -d -p 3306 -v $('pwd')/datadir:/var/lib/mysql nome_da_imagem
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d -v $('pwd')/datadir:/var/lib/mysql nome_da_imagem
+
   
    Em nome_da_imagem colocar o nome da imagem criada
 
