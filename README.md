@@ -27,6 +27,8 @@ Depois da imagem criada você vai subir o container:
  
  docker build -t mysql_ju . 
  
+ Depois dê um chmod 775 docker-entrypoint.sh
+ 
  depois você vai subir o ocntainer lembrando que colocamos uma apste chamada datadir na pasta do mysql e queremos que seus dados do banco fiquem nela
  
   docker run -d -p 3306 -v $('pwd')/datadir:/var/lib/mysql nome_da_imagem
