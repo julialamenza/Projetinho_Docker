@@ -17,6 +17,8 @@ Depois da imagem criada você vai subir o container:
 
  docker run -d -p 80:80 -v $('pwd')/web:/var/www/html/ nome_da_imagem
  
+ Em nome_da_imagem colocar o nome da imagem criada
+ 
  Depois você vai no seu navegador e digita 0.0.0.0 e veja se visualiza a página do nginx e posteriormente o 0.0.0.0/seudoc.html para ver se visualiza o documento html que está na pasta web
  
  Vamos para o MYSQL
@@ -28,6 +30,9 @@ Depois da imagem criada você vai subir o container:
  depois você vai subir o ocntainer lembrando que colocamos uma apste chamada datadir na pasta do mysql e queremos que seus dados do banco fiquem nela
  
   docker run -d -p 3306 -v $('pwd')/datadir:/var/lib/mysql nome_da_imagem
+  
+   Em nome_da_imagem colocar o nome da imagem criada
+
   
   PRONTO =)
  
